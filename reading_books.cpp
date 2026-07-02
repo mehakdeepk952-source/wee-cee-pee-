@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-#include<set><algorithm>
+#include<algorithm>
 using namespace std;
 using ll=long long;
 int main(){
@@ -17,6 +17,7 @@ int main(){
         cin>>books[i];
         sum+=books[i];
     }
+    sort(books.begin(),books.end());
     sum-=books[n-1];
     ll total_time;
     if(sum<=books[n-1]){
